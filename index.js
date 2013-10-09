@@ -6,7 +6,7 @@ exports.style = function(css) {
   document.head.appendChild(style);
 
   return {
-    set: function (moreCss) {
+    reset: function (moreCss) {
       style.removeChild(cssText);
       cssText = document.createTextNode(moreCss);
       style.appendChild(cssText);

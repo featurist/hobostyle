@@ -1,6 +1,6 @@
 {
   "name": "hobostyle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dynamic CSS for your web page!!!",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,13 @@
     "style",
     "stylesheet"
   ],
-  "author": "",
-  "license": "BSD-2-Clause"
+  "author": "Tim Macfarlane <timmacfarlane@gmail.com>",
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/featurist/hobostyle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/featurist/hobostyle/issues"
+  }
 }

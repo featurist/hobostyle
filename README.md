@@ -24,6 +24,6 @@ Then later,
 
 This will create a new `<style>` element in your `<head>` containing `css`.
 
-    mystyle.set(newCss);
+    mystyle.reset(newCss);
 
 This will replace the original css with `newCss`, in the same `<style>` element.
