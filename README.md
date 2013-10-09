@@ -4,7 +4,7 @@ Dynamic CSS for your web page!!!
 
 # How to use?
 
-Assuming you're using [browserify](https://github.com/substack/browserify).
+Assuming you're using [browserify](https://github.com/substack/node-browserify):
 
     npm install hobostyle
 
