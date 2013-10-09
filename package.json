@@ -1,0 +1,17 @@
+{
+  "name": "hobostyle",
+  "version": "0.0.1",
+  "description": "Dynamic CSS for your web page!!!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "html",
+    "style",
+    "stylesheet"
+  ],
+  "author": "",
+  "license": "BSD-2-Clause"
+}
