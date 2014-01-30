@@ -20,10 +20,22 @@ Then later,
 
 # API
 
+## Style
+
     var mystyle = hobostyle.style(css);
 
 This will create a new `<style>` element in your `<head>` containing `css`.
 
-    mystyle.reset(newCss);
+    mystyle.set(newCss);
 
 This will replace the original css with `newCss`, in the same `<style>` element.
+
+## Link
+
+    var mystyle = hobostyle.link(cssUrl);
+
+This will create a new `<style>` element in your `<head>` linking to `css`.
+
+    mystyle.set(newCssUrl);
+
+This will link to `newCssUrl` replacing the old link.
