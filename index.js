@@ -23,7 +23,11 @@ exports.style = function(css) {
 
   return {
     set: set,
-    unset: set
+    unset: set,
+
+    remove: function () {
+      document.head.removeChild(style);
+    }
   };
 };
 
@@ -40,6 +44,10 @@ exports.link = function(url) {
 
   return {
     set: set,
-    unset: set
+    unset: set,
+
+    remove: function () {
+      document.head.removeChild(link);
+    }
   };
 };

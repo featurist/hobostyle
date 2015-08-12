@@ -6,36 +6,64 @@ Dynamic CSS for your web page!!!
 
 Assuming you're using [browserify](https://github.com/substack/node-browserify):
 
-    npm install hobostyle
+```bash
+npm install hobostyle
+```
 
 Then
 
-    var hobostyle = require('hobostyle');
+```js
+var hobostyle = require('hobostyle');
+```
 
-    var mystyle = hobostyle.style('body { background-color: blue; }');
+```js
+var mystyle = hobostyle.style('body { background-color: blue; }');
+```
 
 Then later,
 
-    mystyle.set('body { background-color: red; }');
+```js
+mystyle.set('body { background-color: red; }');
+```
 
 # API
 
 ## Style
 
-    var mystyle = hobostyle.style(css);
+```js
+var mystyle = hobostyle.style(css);
+```
 
 This will create a new `<style>` element in your `<head>` containing `css`.
 
-    mystyle.set(newCss);
+```js
+mystyle.set(newCss);
+```
 
 This will replace the original css with `newCss`, in the same `<style>` element.
 
+```js
+mystyle.remove();
+```
+
+Will remove the style element.
+
 ## Link
 
-    var mystyle = hobostyle.link(cssUrl);
+```js
+var mystyle = hobostyle.link(cssUrl);
+```
 
 This will create a new `<link type="stylesheet" href="...">` element in your `<head>` linking to `cssUrl`.
 
-    mystyle.set(newCssUrl);
+```js
+mystyle.set(newCssUrl);
+```
 
 This will set the href to `newCssUrl`.
+
+```js
+mystyle.remove();
+```
+
+Will remove the style element.
